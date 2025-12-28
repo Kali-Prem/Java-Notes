@@ -102,5 +102,52 @@ Java data types are divided into two categories.
 
 ---
 ## 5. Control Statements
+   ### 1. If-Else Statement
+      int number = 10;
+      if (number > 0) {
+         System.out.println("Positive Number");
+      } 
+      else {
+         System.out.println("Negative Number");
+      }
+  
+   ### 2. Switch Case
+    int day = 3;
+    switch (day) {
+       case 1: System.out.println("Monday"); break;
+       case 2: System.out.println("Tuesday"); break;
+       default: System.out.println("Other Day");
+    }
     
+  ### 3. Loops
+   #### a.) For Loop
+    for (int i = 1; i <= 5; i++) {
+        System.out.println(i);
+    }
+   #### b.) While Loop
+     int i = 1;
+     while (i <= 5) {
+       System.out.println(i);
+       i++;
+     }
+
+---
+## 6. Arrays in Java
+Arrays are used to store multiple values of the same data type.
+
+    public class ArrayExample {
+       public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40};
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+         }
+       }
+     }
+
+
+    
+
+
+      
 
