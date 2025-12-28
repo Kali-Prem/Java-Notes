@@ -144,6 +144,61 @@ Arrays are used to store multiple values of the same data type.
          }
        }
      }
+---
+## 7. Object-Oriented Programming (OOP)
+Java follows four main OOP principles:
+
+   1. Encapsulation – Data hiding
+
+   2. Inheritance – Reusing parent class properties
+
+   3. Polymorphism – Same method, different behavior
+
+   4. Abstraction – Hiding implementation details
+
+### Class and Object Example
+    class Car {
+        String brand;
+        int speed;
+
+       void show() {
+        System.out.println("Brand: " + brand + ", Speed: " + speed);
+       }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+           Car myCar = new Car();
+           myCar.brand = "Tesla";
+           myCar.speed = 200;
+           myCar.show();
+       }
+    }
+   
+### Inheritance Example
+    class Animal {
+       void makeSound() {
+          System.out.println("Animal makes a sound");
+       }
+    }
+
+    class Dog extends Animal {
+         void bark() {
+            System.out.println("Dog barks");
+         }
+    }  
+
+    public class InheritanceExample {
+         public static void main(String[] args) {
+            Dog d = new Dog();
+           d.makeSound();
+           d.bark();
+        }
+    }
+---
+
+
+      
 
 
     
